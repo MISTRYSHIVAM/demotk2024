@@ -1,0 +1,123 @@
+/* text typing animation */
+/* #text-container {
+    display: inline-block;
+} */
+
+#text1 {
+    color: white;
+    letter-spacing: 10px;
+    border-right : 5px solid red;
+    width : 100%;
+    overflow :hidden;
+    white-space: nowrap;
+    animation : typing 2s steps(21),cursor .4s step-end infinite alternate;
+}
+#fletter {
+    color: red;
+}
+#text2 {
+    color: white;
+    letter-spacing: 5px;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+body{
+    margin: 0px;
+}
+
+/* navigation */
+#navigation{
+    display: flex;
+    position: sticky;
+    /*width : 100%;*/
+    height: 50px;
+    top : 0px;
+    padding: 5px 0px;
+    justify-content: space-around;
+    background-color: lightgray;
+    border-bottom: 2px solid gray;
+    font-size: 20px;
+    align-items: center;
+}
+#navigation a {
+    text-decoration: none;
+    color: black;
+}
+#navigation a:hover{
+    color: white;
+}
+#rnav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+#lnav{
+    margin : 0 10px;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+}
+
+/* main container */
+#main {
+    padding : 100px 0px;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    display: flex;
+    height : 350px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* sponsores */
+#sponsore,#organizer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#venue,#follow {
+    text-align: center;
+}
+
+
+/*form*/
+#form,#rbook { 
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    margin-top: 10px;
+}
+
+/*schedule table*/
+#stable{
+    border : 2px solid grey;
+}
+
+/*images memories*/
+#slideshow{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height : 600px;
+    background-image: url(./images/logo.jpg);
+    background-size: cover;
+    animation: slide infinite;
+    animation-duration: 10s;
+}
+
+@keyframes slide {
+    0% { background-image: url(./images/logo.jpg);background-size: cover; }
+    25% { background-image: url(./images/insta.jpg);background-size: cover; }
+    50% { background-image: url(./images/rbook.jpg);background-size: cover; }
+    75% { background-image: url(./images/twitter.png);background-size: cover; }
+    100% { background-image: url(./images/Gujarat-university-logo1.png);background-size: cover; }
+}
